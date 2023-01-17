@@ -1,6 +1,6 @@
 import { useCounterSelector } from '../../context/CounterUseSelectorProvider';
 
-export function Button3() {
+export function ButtonUseContextSelector() {
   const { counter, increment } = useCounterSelector();
 
   return (
