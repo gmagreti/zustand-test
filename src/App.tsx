@@ -1,8 +1,9 @@
 import './App.css'
 import reactLogo from './assets/react.svg'
-import { Button1 } from './components/Button1'
-import { Button2 } from './components/Button2'
-import { Button3 } from './components/Button3'
+import { ButtonContextAPI } from './components/ButtonContextAPI'
+import { ButtonUseContextSelector } from './components/ButtonUseContextSelector'
+import { ButtonZustand } from './components/ButtonZustand'
+import { ButtonZustand2 } from './components/ButtonZustand2'
 
 function App() {
   return (
@@ -17,11 +18,13 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       
-      <Button1 />
-    
-      <Button2 />
+      <ButtonZustand />
 
-      <Button3 />
+      <ButtonZustand2 />
+    
+      <ButtonContextAPI />
+
+      <ButtonUseContextSelector />
      
     </div>
   )
