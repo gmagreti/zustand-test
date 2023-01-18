@@ -1,6 +1,5 @@
 import { useCounter } from '../../stores/counter';
 
-
 export function ButtonZustand() {
   const counter = useCounter((state) => state.count)
   const increment = useCounter((state) => state.increment)

@@ -1,5 +1,6 @@
 import './App.css'
 import reactLogo from './assets/react.svg'
+
 import { ButtonContextAPI } from './components/ButtonContextAPI'
 import { ButtonUseContextSelector } from './components/ButtonUseContextSelector'
 import { ButtonZustand } from './components/ButtonZustand'
@@ -18,13 +19,14 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       
-      <ButtonZustand />
-
-      <ButtonZustand2 />
     
       <ButtonContextAPI />
 
       <ButtonUseContextSelector />
+      
+      <ButtonZustand />
+
+      <ButtonZustand2 />
      
     </div>
   )

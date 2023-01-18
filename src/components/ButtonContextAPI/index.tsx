@@ -1,8 +1,7 @@
 import { useContext } from 'react';
 import { CounterContext } from '../../context/CounterProvider';
 
-
-export function ButtonContextAPI() {
+  export function ButtonContextAPI() {
   const { counter, increment } = useContext(CounterContext);
 
   return (
