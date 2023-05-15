@@ -5,18 +5,6 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -38,4 +26,60 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.section {
+  margin-bottom: 32px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+
+  border-radius: 10px;
+
+  background-color: #16181a;
+  border: 1px solid #ffff
+}
+
+.auth {
+  display: flex;
+  align-items: flex-start;
+}
+
+.auth button {
+  margin-right: 16px;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 0;
+  padding-bottom: 16px;
+  align-items: center;
+}
+
+.todo-item.new input[type='text'] {
+  padding: 8px 12px;
+  flex: 1;
+  margin-right: 8px;
+}
+
+.todo-item-text {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.todo-item.completed .todo-item-text {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.clear-all {
+  margin-top: 20px
+}
+
+.new {
+  padding-bottom: 50px;
 }
