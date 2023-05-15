@@ -10,8 +10,6 @@ import {
   Button,
   Card,
   Checkbox,
-  Container,
-  Grid,
   Input,
   Spacer,
   Text,
@@ -46,8 +44,6 @@ function App() {
     setText("");
   };
 
-  console.log('data',data)
-
   return (
     <div className="App">
       <div className="card">
@@ -75,8 +71,6 @@ function App() {
           <ButtonZustand2 />
         </>
       )}
-
-
 
       {todoActive && (
         <div className="section">
