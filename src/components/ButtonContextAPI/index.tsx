@@ -1,14 +1,21 @@
-import { useContext } from 'react';
-import { CounterContext } from '../../context/CounterProvider';
+import { useContext } from "react";
+import { CounterContext } from "../../context/CounterProvider";
+import { Button } from "@nextui-org/react";
 
-  export function ButtonContextAPI() {
+export function ButtonContextAPI() {
   const { counter, increment } = useContext(CounterContext);
 
   return (
     <div className="card">
-      <button onClick={increment}>
+      <Button
+        color="primary"
+        onClick={increment}
+        css={{
+          width: "100%",
+        }}
+      >
         count with Context API - {counter}
-      </button>
-  </div>
+      </Button>
+    </div>
   );
 }
